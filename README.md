@@ -69,3 +69,10 @@ This is a simple **Login Page** built using **React** and **Tailwind CSS**. The 
 - **Responsive Design**: The layout adapts to different screen sizes, ensuring a good user experience on both mobile and desktop.
 - **React State Management**: Utilizes `useState` to handle form values for email and password.
 
+# Milestone 3- 
+- Organized backend folder structure (routes, controllers, models).
+- Configured a Node.js server using Express.
+- Connected to MongoDB using Mongoose.
+- Basic error handling for smooth debugging and user feedback.
+
+

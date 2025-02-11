@@ -52,3 +52,47 @@ This project will guide you through building  full-stack E-commerce website  usi
 # Milestone 1: 
 
 In a MERN stack application, login and sign-up (authentication) typically involve a process where users can register (sign-up) with their credentials, and later log in using those credentials. The login and sign-up process can be divided into several steps, with separate client-side (React) and server-side (Node.js/Express) handling.
+
+# milestone 2: 
+
+Milestone 2: Login Page & Authentication Setup
+Description:
+Milestone 2 focuses on creating and setting up the Login Page for the application, including basic UI elements like forms and fields for user authentication. This milestone also involves setting up Tailwind CSS for styling to ensure responsive and modern design practices.
+
+Key Features Completed:
+Login Page Design:
+
+Created a responsive login page with email and password inputs.
+Added "Remember Me" checkbox and "Forgot Password?" link.
+Tailwind CSS Setup:
+
+Integrated Tailwind CSS for styling the login page with a clean, modern interface.
+Configured the tailwind.config.js and postcss.config.js files.
+New Branch Creation:
+
+Created a new branch (milestone-2) to manage and track the progress for this feature.
+Responsive Layout:
+
+The login page is designed to be responsive and user-friendly, adjusting for both mobile and desktop views.
+Technologies Used:
+React: JavaScript library for building the user interface.
+Tailwind CSS: Utility-first CSS framework for styling.
+React Router: For managing routing (if applicable).
+Axios: To handle HTTP requests for user authentication (in future milestones).
+
+# Milestone 3:
+Backend Setup
+
+Set up the project folder structure with routes, controllers, models, middlewares, and utilities.
+Created a Node.js server with Express.
+Connected the server to MongoDB using Mongoose.
+Added error handling middleware for better debugging.
+
+# Milestone 4 :
+Overview
+In this milestone, the following features were implemented:
+User Model Creation: A new User model was created to represent user data in the database, including necessary fields such as name, email, password, etc.
+Multer Integration: Multer was integrated to handle file uploads (e.g., profile images, documents, etc.). Multer handles multipart/form-data, which is used for uploading files in Node.js applications.
+
+# Milestone 5:
+created a signup page where users can create a new account 

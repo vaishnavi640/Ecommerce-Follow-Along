@@ -75,4 +75,50 @@ This is a simple **Login Page** built using **React** and **Tailwind CSS**. The 
 - Connected to MongoDB using Mongoose.
 - Basic error handling for smooth debugging and user feedback.
 
+ # Milestone 4 Overview
+In this milestone, the following features were implemented:
+User Model Creation: A new User model was created to represent user data in the database, including necessary fields such as name, email, password, etc.
+Multer Integration: Multer was integrated to handle file uploads (e.g., profile images, documents, etc.). Multer handles multipart/form-data, which is used for uploading files in Node.js applications.
+
+# Milestone 5: Sign-Up Page Implementation
+In this milestone, I have created a Sign-Up page with the following features:
+
+- A user-friendly form for entering Name, Email, Password, and Confirm Password.
+- Form validation to ensure:
+   All fields are filled.
+   The email is valid.
+  The password meets the minimum length requirement and matches the confirm password field.
+- Upon successful form submission, the user is redirected to the Login page.
+
+Technologies used:
+- React
+- Tailwind CSS
+- React Router
+
+
+# Milestone 6: Backend endpoint for the Signup page to store all user data securely
+In this milestone, I have implemented User Authentication for the backend with the following features:
+
+Password Encryption
+User Signup via Endpoint
+Tested Endpoints Using Postman GET & POST Requests
+Technologies Used:
+
+MongoDB & Mongoose (Database & ORM)
+bcrypt.js (Password encryption)
+jsonwebtoken (JWT) (Authentication)
+
+
+# Milestone 7: Backend endpoint for the Login page to store all user data securely and Implementation
+In this milestone, we focus on creating a login endpoint for user authentication. This includes:
+
+-Accepting User Credentials
+-Password Hashing
+-Compare Hashed Passwords
+-Credentials Store in Database (MongoDB)
+
+ Technologies Used:
+- MongoDB & Mongoose (Database & ORM)
+- bcrypt.js (Password encryption)
+
 

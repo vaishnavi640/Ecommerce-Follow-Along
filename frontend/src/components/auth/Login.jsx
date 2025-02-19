@@ -6,7 +6,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-400 to-teal-500 flex justify-center items-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-blue-900 flex justify-center items-center py-12 sm:px-6 lg:px-8">
       <div className="w-full sm:max-w-md bg-white p-8 rounded-lg shadow-xl">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
           Login into Your Account

@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800">{product.name}</h3>
         <p className="text-gray-500 mt-1">{product.description}</p>
-        <p className="text-lg font-bold text-gray-900 mt-2">${product.price}</p>
+        <p className="text-lg font-bold text-gray-900 mt-2">Rs.{product.price}</p>
 
         {/* Add to Cart Button */}
         <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300">

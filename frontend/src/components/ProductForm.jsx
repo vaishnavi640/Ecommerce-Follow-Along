@@ -99,7 +99,7 @@ const navigate = useNavigate();
           <button
             type="submit"
                   
-            className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-3 rounded-lg shadow-md font-semibold text-lg transition duration-300 hover:from-blue-600 hover:to-purple-600"
+            className="w-full bg-blue-500 to-purple-500 text-white px-10 py-3 rounded-lg shadow-md font-semibold text-lg transition duration-300 hover:from-blue-600 hover:to-purple-600"
           >
             Submit
           </button>

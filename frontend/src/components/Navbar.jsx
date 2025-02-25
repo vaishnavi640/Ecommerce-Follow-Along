@@ -4,7 +4,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   return (
-    <div className="h-16 bg-gray-900 text-white flex items-center justify-between px-6 shadow-lg">
+    <div className="h-16 bg-black text-white flex items-center justify-between px-6 shadow-lg">
       {/* Website Name */}
       <h1 className="text-2xl font-semibold tracking-wide">My Website</h1>
       
@@ -18,7 +18,7 @@ function Navbar() {
         </button>
         <button 
           onClick={() => navigate('/products')} 
-          className="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md transition duration-300 hover:bg-blue-700"
+          className="bg-white text-blue-900 px-5 py-2 rounded-lg shadow-md transition duration-300 hover:bg-blue-700"
         >
           Add Product
         </button>

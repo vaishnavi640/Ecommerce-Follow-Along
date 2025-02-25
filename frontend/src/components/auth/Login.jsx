@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-blue-600 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-purple-400 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h1 className="mt-6 text-center text-3xl font-extrabold text-white">
           Login to Your Account
@@ -66,7 +66,7 @@ const Login = () => {
               />
             </div>
 
-            <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-md">
+            <button type="submit" className="w-full bg-purple-100 text-white py-2 rounded-md">
               Login
             </button>
 

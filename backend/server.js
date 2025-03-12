@@ -44,7 +44,7 @@ app.use(cors({
 app.use("/uploads", express.static("uploads"));
 
 // Import and use routes
-const userRoutes = require("./User/UserRouter");
+const userRoutes = require("./User/userRouter");
 const productRoutes = require("./Products/productRouter");
 
 app.use("/user", userRoutes);

@@ -1,3 +1,4 @@
+
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
@@ -6,7 +7,4 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true }
 });
 
-// Check if the 'User' model is already compiled to prevent overwriting
-const User = mongoose.models.User || mongoose.model("User", UserSchema);
-
-module.exports = User;
+module.exports = mongoose.model("User", UserSchema);

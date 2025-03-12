@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -39,12 +38,12 @@ const ProductForm = () => {
             const token = localStorage.getItem("token");  
     
             if (!token) {
-                console.error("❌ No token found in localStorage!");
+                console.error("No token found in localStorage!");
                 alert("You must be logged in to add a product.");
                 return;
             }
     
-            console.log("🔹 Sending token:", token);  // 🛠 Debugging line
+            console.log("Sending token:", token);  // 🛠 Debugging line
     
             await axios.post("http://localhost:8000/products/add", formData, {
                 headers: { 
@@ -53,17 +52,17 @@ const ProductForm = () => {
                 },
             });
     
-            alert("✅ Product added successfully!");
+            console.log("Product added successfully!");
             navigate("/");
         } catch (error) {
-            console.error("❌ Error adding product:", error.response ? error.response.data : error.message);
+            console.error("Error adding product:", error.response ? error.response.data : error.message);
             alert("Failed to add product. Make sure you're logged in!");
         }
     };
     
     return (
         <div className="flex items-center justify-center h-screen w-screen">
-            <div className="p-6 max-w-lg mx-auto bg-gray-100 shadow-xl rounded-lg">
+            <div className="p-6 max-w-lg mx-auto bg-gray-200 shadow-xl rounded-lg">
                 <h2 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">Add New Product</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <label className="block text-gray-700 font-semibold">Product Name:</label>
@@ -105,7 +104,7 @@ const ProductForm = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-400 text-white px-5 py-3 rounded-lg shadow-md font-semibold text-lg transition duration-300 hover:from-blue-600 hover:to-purple-600"
+                        className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-3 rounded-lg shadow-md font-semibold text-lg transition duration-300 hover:from-blue-600 hover:to-purple-600"
                     >
                         Submit
                     </button>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +25,7 @@ const Card = ({ name, price, image, onAddToCart, onBuyNow, onEdit, onDelete, id 
       {/* Product Details */}
       <div className="text-center p-4">
         <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-        <p className="text-lg text-green-600 font-bold mt-1">${price}</p>
+        <p className="text-lg text-green-600 font-bold mt-1">₹{price}</p>
 
         {/* Action Buttons */}
         <div className="flex justify-center items-center gap-4 mt-4 pb-4">

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -11,33 +12,29 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-  
+
     try {
-      const response = await axios.post("http://localhost:8000/user/login", {
-        email,
-        password,
-      });
-  
-      console.log("Login successful!", response.data);
-  
-      const { token, user } = response.data;
-  
-      if (user) {
-        localStorage.setItem("user", JSON.stringify(user));  // ✅ Store user details
-      }
-      localStorage.setItem("token", token);  // ✅ Store token
-  
-      navigate("/");
+        const response = await axios.post("http://localhost:8000/user/login", {
+            email,
+            password,
+        });
+
+        if (response.status === 200) {
+            const { token, user } = response.data;
+
+            localStorage.setItem("token", token);
+            localStorage.setItem("user", JSON.stringify(user)); // ✅ Ensure user is stored correctly
+
+            navigate("/");
+        }
     } catch (err) {
-      setError(err.response?.data?.message || "Something went wrong");
+        setError(err.response?.data?.message || "Something went wrong.");
     }
-  };
-  
-  
-  
+};
+
 
   return (
-    <div className="min-h-screen bg-purple-400 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gray-700 flex flex-col items-center justify-center">
       <div className="w-96 bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
 

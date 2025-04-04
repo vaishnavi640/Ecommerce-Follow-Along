@@ -1,4 +1,3 @@
-
 import { useNavigate, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FiLogOut } from 'react-icons/fi'; // Import logout icon
@@ -37,13 +36,13 @@ function Navbar() {
   const userInitials = user ? user.name.split(" ")[0][0] + user.name.split(" ")[1]?.[0] : "";
 
   return (
-    <nav className="bg-[#D4AF37] text-white fixed top-0 left-0 right-0 z-10 w-full shadow-lg">
+    <nav className="bg-[#12192c] text-white fixed top-0 left-0 right-0 z-10 w-full shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/" className="text-2xl font-semibold tracking-wide text-white">
-                Stop and Shop
+                Stop And Shop
               </Link>
             </div>
           </div>
@@ -62,6 +61,9 @@ function Navbar() {
                   </Link>
                   <Link to="/cart" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     Cart
+                  </Link>
+                  <Link to="/my-orders" className="hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  My Orders
                   </Link>
 
                   <div className="relative group"> {/* Hover effect on profile avatar */}

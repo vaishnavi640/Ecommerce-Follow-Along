@@ -64,9 +64,8 @@ const Product = () => {
 
     return (
         <div className="flex justify-center items-center w-full">
-            <div className="min-h-screen w-full bg-[#800020] flex flex-col items-center p-20
-            ">
-                <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-10 ">
+            <div className="min-h-screen w-full bg-[#13234f] flex flex-col items-center p-5">
+                <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-10">
                     Our Products
                 </h1>
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full">
